@@ -1,1 +1,2 @@
-# goit-murkup-hw7
+# goit-murkup-hw1
+репозитоий дз номер 1
