@@ -14,69 +14,63 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <!--Header-->
-    <header class="header flex">
+    <header class="header container flex">
       <!--================ Navigation===================== -->
 
-      <div class="flex container">
-        <nav class="flex">
-          <a class="nav-logo" href="./index.html">
-            <span class="logo-span">Web</span>Studio</a
-          >
+      <nav class="block flex">
+        <a class="logo link" href="./index.html">
+          <span class="logo__span">Web</span>Studio</a
+        >
 
-          <ul class="list link ul-nav flex">
-            <li>
-              <a href="./index.html" class="nav current">Студия</a>
-            </li>
-            <li>
-              <a href="./portfolio.html" class="nav">Потрфоліо</a>
-            </li>
-            <li>
-              <a href="./index-test.html" class="nav">Контакти</a>
-            </li>
-          </ul>
-
-          <!-- </nav> -->
-        </nav>
-        <!===================Autorizaciya====================== >
-        <ul class="nav-aut list flex">
-          <li class="mailto-post">
-            <a class="link flex link-nav-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com
-              <svg class="mailto-item">
-                <use href="./images/sprite.svg#icon-header-1"></use>
-              </svg>
-            </a>
+        <ul class="block__list nav flex">
+          <li>
+            <a href="./index.html" class="block__link current">Студия</a>
           </li>
-
-          <li class="mailto-fone">
-            <a class="link link-nav-tel flex" href="tel:+380961111111"
-              >+38 096 111 11 11
-              <svg class="mailto-tel">
-                <use href="./images/sprite.svg#icon-header-2" height="16"></use>
-              </svg>
-            </a>
+          <li>
+            <a href="./portfolio.html" class="block__link">Потрфоліо</a>
+          </li>
+          <li>
+            <a href="./index-test.html" class="block__link">Контакти</a>
           </li>
         </ul>
-      </div>
+      </nav>
+      <!===================Autorizaciya====================== >
+      <ul class="block__list autorizator flex">
+        <li class="block__item">
+          <a class="block__link flex-revers" href="mailto:info@devstudio.com"
+            >info@devstudio.com
+            <svg class="mailto-item">
+              <use href="./images/sprite.svg#icon-header-1"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="block__item">
+          <a class="block__link flex-revers" href="tel:+380961111111"
+            >+38 096 111 11 11
+            <svg class="mailto-tel">
+              <use href="./images/sprite.svg#icon-header-2"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </header>
     <!--Main-->
     <main>
-      <!--pointer-->
-
       <!==================bg==============================>
 
-      <section class="heroy-box">
-        <div class="container">
-          <h1 class="main-title">
+      <section class="hero-block">
+        <div class="container hero-fon">
+          <h1 class="hero-block__title">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
 
-          <button data-modal-open type="button " class="button main-button">
+          <button data-modal-open type="button" class="button main-button">
             Замовити послугу
           </button>
         </div>
@@ -84,16 +78,16 @@
 
       <!================our skills======================>
       <section class="section skills">
-        <div class="container">
-          <h2 class="section-title skills visually-hidden">Наші скіли</h2>
+        <div class="container block-grid">
+          <h2 class="title-two skills visually-hidden">Наші скіли</h2>
 
-          <ul class="list flex icon-skills-svg">
-            <li class="icon-skills-item">
+          <ul class="block ">
+            <li class="block__item list__skills">
               <svg width="70" height="70">
                 <use href="./images/sprite.svg#icon-antenna"></use>
               </svg>
             </li>
-            <li class="icon-skills-item">
+            <li class="block__item list__skills">
               <svg width="70" height="70">
                 <use href="./images/sprite.svg#icon-clock"></use>
               </svg>
@@ -110,33 +104,33 @@
             </li>
           </ul>
 
-          <ul class="list ul-skills flex">
+          <ul class="block   ul-skills flex">
             <li class="skills-element">
-              <h3 class="title">Увага до деталей</h3>
-              <p class="skills-item">
+              <h3 class="title-three">Увага до деталей</h3>
+              <p class="block__pharagrap">
                 Ідейні міркування, і навить початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
 
             <li class="skills-element">
-              <h3 class="title">Пунктуальність</h3>
-              <p class="skills-item">
+              <h3 class="title-three">Пунктуальність</h3>
+              <p class="block__pharagrap">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
 
             <li class="skills-element">
-              <h3 class="title">Планування</h3>
-              <p class="skills-item">
+              <h3 class="title-three">Планування</h3>
+              <p class="block__pharagrap">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
             <li class="skills-element">
-              <h3 class="title">Сусасні технології</h3>
-              <p>
+              <h3 class="title-three">Сусасні технології</h3>
+              <p class="block__pharagrap">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
