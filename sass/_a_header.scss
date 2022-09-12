@@ -1,5 +1,29 @@
+//  ======================Mobile====================
 .container {
    @extend %container;
+
+
+   @media screen and (min-width: $mobile) {
+      width: mobile;
+      
+   }
+
+   @media screen and (min-width: $tablet) {
+      width: $tablet;
+      
+
+   }
+   @media screen and (min-width: $desktop) {
+      width: $desktop;
+     
+   }
+
+}
+
+//  ======================Desktop====================
+
+.header {
+   @extend %flex;
 }
 .block { 
     @extend %determtext;
@@ -41,10 +65,12 @@ color: $accent-text-color;
 
 
 .nav {
+   @extend %flex;
    margin-left: 93px;
    column-gap: 50px;
 }
 .autorizator {
+   
    margin-left: auto;
    column-gap: 30px;
 }

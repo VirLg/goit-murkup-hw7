@@ -1,83 +1,102 @@
-.block {
-    @extend %list;
+.container {
 
-    &__item {
-
-   
-
-    background-color: $background-button;
-    border-radius: 4px;
-
-
-    }
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: $mobile) {
+            width: 468px ;
 }
-
-.block-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-  }
-
-.list__skills {
-    width: 270px;
-    height: 120px;
-    background-color: $primary-icon-color;
+ @media screen and (min-width: $tablet) {
+                    width: $tablet;
+}
+@media screen and (min-width: $desktop) {
+    width: $desktop;
+}
 }
 
 
-.title-two {
-    @extend %title-two;
+.skills__ul{
+    list-style: none;
+    padding: 0%;
+@media screen and (min-width: $tablet) {
+     display: flex;
+     flex-wrap: wrap;
 }
-.title-three {
-    @extend %title-three;
 }
 .block__pharagrap {
     @extend %main-text;
 }
-.section-title {
-    margin-bottom: 50px;
-
-    color: var(--title-text-color);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+.title-two {
+    @extend %visually-hidden;
 }
-
-.section.skills {
-    padding-bottom: 0;
-}
-
-.skills-item {
-    line-height: 1.71;
-}
-
-.ul-skills .title {
-    margin-bottom: 10px;
-    color: var(--title-text-color);
-}
-
-.ul-skills .title {
-    color: var(--title-text-color);
-}
-
-.ul-skills {
-    column-gap: 30px;
+.title-three {
     margin-top: 30px;
-    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.skills-position {
+    background-color: $primary-icon-color;
+}
+.skills__item {
+width: 70px;
+height: 70px;
 }
 
-.skills-element {
-    width: 270px;
-}
 
-.icon-skills-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.skills-element {  
+
+@media screen and (min-width: $tablet){
+width: 354px;
+ &:nth-child(2n - 1) {
+     margin-right: 30px;
     
+         background-color: orange;
+    }
+
+&:nth-last-child(-n + 2) {
+margin-top: 30px;
+background-color: blue;
 }
 
-.icon-skills-svg {
-    column-gap: 30px;
+
 }
+
+     @media screen and (min-width: $desktop) {
+width: 270px;
+&:not(:last-child) {
+    margin-right: 30px;
+    margin-top: 0;
+}
+     &:last-child {
+        margin-top: 0;
+     }
+     }
+}
+
+
+
+ .skills-position {
+     
+     display: flex;
+     width: 100%;
+     height: 120px;
+     
+     align-items: center;
+     justify-content: center;
+  
+          @media screen and (min-width: $mobile) {
+         width: 450px;
+         height: 120px;
+     }
+     @media screen and (min-width: $tablet) {
+         width: 354px;
+         height: 120px;
+
+     }
+     @media screen and (min-width: $desktop) {
+         width: 100%;
+         height: 120px;
+     }
+ }
+    

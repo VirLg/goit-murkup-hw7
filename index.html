@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Домашнє завдання</title>
 
     <link
@@ -39,7 +40,7 @@
         </ul>
       </nav>
       <!===================Autorizaciya====================== >
-      <ul class="block__list autorizator flex">
+      <ul class="block block__list autorizator">
         <li class="block__item">
           <a class="block__link flex-revers" href="mailto:info@devstudio.com"
             >info@devstudio.com
@@ -70,43 +71,30 @@
             вашого бізнесу
           </h1>
 
-          <button data-modal-open type="button" class="button main-button">
+          <button
+            data-modal-open
+            type="button"
+            class="button hero-block-button"
+          >
             Замовити послугу
           </button>
         </div>
       </section>
 
       <!================our skills======================>
-      <section class="section skills">
-        <div class="container block-grid">
-          <h2 class="title-two skills visually-hidden">Наші скіли</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="title-two">Наші скіли</h2>
 
-          <ul class="block ">
-            <li class="block__item list__skills">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-antenna"></use>
-              </svg>
-            </li>
-            <li class="block__item list__skills">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-clock"></use>
-              </svg>
-            </li>
-            <li class="icon-skills-item">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-diagram"></use>
-              </svg>
-            </li>
-            <li class="icon-skills-item">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-astronaut"></use>
-              </svg>
-            </li>
-          </ul>
-
-          <ul class="block   ul-skills flex">
+          <ul class="skills__ul">
             <li class="skills-element">
+              <div class="skills-position">
+                <svg class="skills__item">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="title-three">Увага до деталей</h3>
+
               <p class="block__pharagrap">
                 Ідейні міркування, і навить початок повсякденної роботи з
                 формування позиції.
@@ -114,6 +102,14 @@
             </li>
 
             <li class="skills-element">
+              <div class="skills-position">
+                <svg width="70" height="70">
+                  <use
+                    class="skills-svg"
+                    href="./images/sprite.svg#icon-clock"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="title-three">Пунктуальність</h3>
               <p class="block__pharagrap">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -122,6 +118,11 @@
             </li>
 
             <li class="skills-element">
+              <div class="skills-position">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="title-three">Планування</h3>
               <p class="block__pharagrap">
                 Так само консультація з широким активом значною мірою зумовлює.
@@ -129,6 +130,11 @@
             </li>
 
             <li class="skills-element">
+              <div class="skills-position">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="title-three">Сусасні технології</h3>
               <p class="block__pharagrap">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -183,19 +189,19 @@
       <section class="section clients">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list flex employee-list">
-            <li class="item-employee">
+          <ul class="employee-list">
+            <li class="employee-list__item">
               <img
                 class="img-view"
                 src="./images/one.jpg"
                 alt="photo men"
                 width="270"
               />
-              <div class="test-card">
+              <div class="">
                 <h3 class="employee">Ігор Дем'яненко</h3>
                 <p class="employee-text">Product Desig ner</p>
-                <ul class="list flex employee-network">
-                  <li>
+                <ul class="employee-network">
+                  <li class="">
                     <a
                       class="social-item"
                       href="https://www.instagram.com/"
@@ -214,7 +220,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="employee-network__list">
                     <a
                       class="social-item"
                       href="https://twitter.com/?lang=uk"
@@ -232,7 +238,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="employee-network__list">
                     <a
                       class="social-item"
                       href="https://www.facebook.com/"
@@ -250,7 +256,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="employee-network__list">
                     <a
                       class="social-item"
                       href="https://www.linkedin.com/"
@@ -272,17 +278,17 @@
               </div>
             </li>
 
-            <li class="item-employee">
+            <li class="employee-list__item">
               <img
                 class="img-view"
                 src="./images/two.jpg"
                 alt="photo women"
                 width="270"
               />
-              <div class="test-card">
+              <div class="">
                 <h3 class="employee">Ольга Рєпіна</h3>
                 <p class="employee-text">Frontend Developer</p>
-                <ul class="list flex employee-network">
+                <ul class="employee-network">
                   <li>
                     <a
                       class="social-item"
@@ -360,17 +366,17 @@
               </div>
             </li>
 
-            <li class="item-employee">
+            <li class="employee-list__item">
               <img
                 class="img-view"
                 src="./images/three.jpg"
                 alt="photo men"
                 width="270"
               />
-              <div class="test-card">
+              <div class="">
                 <h3 class="employee">Микола Тарасов</h3>
                 <p class="employee-text">Marketing</p>
-                <ul class="list flex employee-network">
+                <ul class="employee-network">
                   <li>
                     <a
                       class="social-item"
@@ -448,17 +454,17 @@
               </div>
             </li>
 
-            <li class="item-employee">
+            <li class="employee-list__item">
               <img
                 class="img-view"
                 src="./images/four.jpg"
                 alt="photo men"
                 width="270"
               />
-              <div class="test-card">
+              <div class="">
                 <h3 class="employee">Михайло Єрмаков</h3>
                 <p class="employee-text">UI Designer</p>
-                <ul class="list flex employee-network">
+                <ul class="employee-network">
                   <li>
                     <a
                       class="social-item"
@@ -543,9 +549,9 @@
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
 
-          <ul class="list flex client-our">
-            <li>
-              <a class="client-icon" href="">
+          <ul class="main-clients">
+            <li class="main-clients__list">
+              <a class="main-clients__item" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo"></use>
                 </svg>
@@ -823,5 +829,26 @@
           });
       })();
     </script>
+
+    <div class="container">
+      <ul class="test-employee">
+        <li class="employee-item">
+          <svg class="svp-poz">
+            <use href="./images/sprite.svg#icon-clock"></use>
+          </svg>
+
+          <h3 class="employee">Ольга Рєпіна</h3>
+          <p class="employee-text">Frontend Developer</p>
+        </li>
+        <li class="employee-item">
+          <h3 class="employee">Ольга Рєпіна</h3>
+          <p class="employee-text">Frontend Developer</p>
+        </li>
+        <li class="employee-item">
+          <h3 class="employee">Ольга Рєпіна</h3>
+          <p class="employee-text">Frontend Developer</p>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

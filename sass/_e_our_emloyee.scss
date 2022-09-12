@@ -1,0 +1,83 @@
+.container {
+    @extend %container;
+    @extend %list;
+}
+
+.employee-list__item {
+@extend %list;
+@media screen and (min-width: $mobile) {
+    
+    .img-view {
+        width: 450px;
+        height: 460px;
+    }
+}
+    
+}
+
+.employee-network {
+    @extend %flex;
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+
+}
+
+
+
+
+
+.employee-list {
+padding-left: 0;
+display: grid;
+@media screen and (min-width: $mobile) {
+           
+    grid-template-columns: 100% ; 
+   
+    &__item {
+        .img-view {
+                width: 450px;
+                height: 460px;
+            }
+        }
+    }
+         
+    @media screen and (min-width: $tablet) {
+        
+     grid-template-columns: repeat(2, 1fr); 
+
+    &__item {
+        .img-view {
+            width: 354px;
+            height: 374px;
+        }
+    }
+
+     }
+
+     @media screen and (min-width: $desktop) {
+        grid-template-columns: repeat(4, 1fr);
+
+        &__item {
+                .img-view {
+                    width: 270px;
+                    height: 260px;
+                }
+            }
+
+
+
+        
+     }
+
+
+
+}

@@ -76,8 +76,10 @@ img {
 }
 
 %container {
-    width: 1200px;
-    margin: 0 auto;
+    display: block;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -98,12 +100,6 @@ img {
     color: $title-text-color;
 }
 
-/* убрал отступ снизу у картинки 4пикс */
-/* .img-view{
-                display: block;
-                padding: 0;
-                margin: 0;
-            } */
 
 %section {
     padding-top: 94px;
@@ -117,6 +113,3 @@ img {
 }
 
 
-h1 {
-    color: red;
-}

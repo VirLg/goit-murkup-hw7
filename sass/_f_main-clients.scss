@@ -1,0 +1,51 @@
+.container {
+    @extend %container;
+    
+}
+.client-svg {
+    fill: $primary-icon-color;
+    background-position: center;
+   
+}
+
+.main-clients__list {
+    @extend %flex;
+}
+
+.main-clients__item {
+     
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-clients {
+    display: grid;
+    @extend %list;
+
+@media screen and (min-width: $mobile) {
+
+    grid-template-columns: repeat(2, 1fr); 
+
+    &__list {
+        
+        border: 1px solid red;
+        width: 210px;
+        height: 92px;
+        
+    }
+    }
+    
+    @media screen and (min-width: $tablet){
+        
+     grid-template-columns: repeat(3, 1fr); 
+     }
+
+     @media screen and (min-width: $desktop){
+        grid-template-columns: repeat(6, 1fr);
+        
+     }
+}
+
+
+
+
