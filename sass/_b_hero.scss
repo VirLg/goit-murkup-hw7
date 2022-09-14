@@ -1,8 +1,14 @@
-.container {
+.hero-fon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     @extend %container;
 }
 
 .hero-fon {
+    
      margin-left: auto;
     margin-right: auto;
      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -36,13 +42,6 @@
        padding-bottom: 120px;
         }
 }
-
-
-
-
-
-
-
 
 
 .hero-block__title  {
@@ -80,15 +79,18 @@
 
 
 .hero-block-button {
+    @extend .button ;
+    
+        
    
     @media screen and (max-width: 479px) {
-        @include button;
+       
             padding: 10px 24px;
         }
      
     
     @media screen and (min-width: $mobile){ 
-    @include button;
+    
     padding: 10px 24px;
     }
     
@@ -96,24 +98,19 @@
     
     
     @media screen and (min-width: $tablet){
-        @include button;
+        
         padding: 10px 24px;
      }
  
  
      @media screen and (min-width: $desktop){
-        @include button;
+        
         padding: 10px 32px;
         }
  
- }
  
- .hero-block-button:focus,
- .hero-block-button:hover {
-    
-     background-color: #c4c4c4;
+ 
 
- }
-
+}
 
 

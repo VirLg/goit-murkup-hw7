@@ -75,6 +75,15 @@ p {
   text-decoration: none;
 }
 
+.hero-fon, .container {
+  display: block;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .container {
   display: block;
   max-width: 1200px;
@@ -85,6 +94,13 @@ p {
 }
 
 .main-clients, .employee-list, .block__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list, .skills__ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -108,6 +124,27 @@ p {
 }
 
 /* Button */
+.button, .hero-block-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:focus, .hero-block-button:focus, .button:hover, .hero-block-button:hover {
+  background-color: #c4c4c4;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: mobile;
@@ -179,6 +216,14 @@ p {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero-fon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero-fon {
@@ -277,100 +322,28 @@ p {
 
 @media screen and (max-width: 479px) {
   .hero-block-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: none;
-    color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 10px 24px;
-  }
-  .hero-block-button:focus, .hero-block-button:hover {
-    background-color: #c4c4c4;
   }
 }
 @media screen and (min-width: 480px) {
   .hero-block-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: none;
-    color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 10px 24px;
-  }
-  .hero-block-button:focus, .hero-block-button:hover {
-    background-color: #c4c4c4;
   }
 }
 @media screen and (min-width: 768px) {
   .hero-block-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: none;
-    color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 10px 24px;
-  }
-  .hero-block-button:focus, .hero-block-button:hover {
-    background-color: #c4c4c4;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-block-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px 32px;
-    border-radius: 4px;
-    border: none;
-    color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 10px 32px;
-  }
-  .hero-block-button:focus, .hero-block-button:hover {
-    background-color: #c4c4c4;
   }
 }
 
-.hero-block-button:focus,
-.hero-block-button:hover {
-  background-color: #c4c4c4;
+.skills-position {
+  background-color: var(--background-button);
+  border-radius: 4px;
 }
 
 .employee-list__img-view {
@@ -380,6 +353,8 @@ p {
 }
 
 .skills__ul {
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
   padding: 0;
   display: grid;
@@ -411,10 +386,6 @@ p {
 .title-three {
   margin-top: 30px;
   margin-bottom: 10px;
-}
-
-.skills-position {
-  background-color: var(--primary-icon-color);
 }
 
 .skills__item {

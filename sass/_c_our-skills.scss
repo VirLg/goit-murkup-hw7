@@ -1,15 +1,25 @@
+
 .container {
 @extend %container;
-  
+
 }
 
+
+.skills-position {
+    background-color: var(--background-button);
+    border-radius: 4px;
+}
 .employee-list__img-view {
     margin-left: auto;
     margin-right: auto;
     background-position: center;
 }
 .skills__ul{
+    @extend .list;
+    margin-top: 0;
+    margin-bottom: 0;
     list-style: none;
+
     padding: 0;
    display: grid;
    margin-left: auto;
@@ -49,9 +59,7 @@
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.skills-position {
-    background-color: var(--primary-icon-color);
-}
+
 .skills__item {
 width: 70px;
 height: 70px;
@@ -70,7 +78,6 @@ height: 70px;
      
      align-items: center;
      justify-content: center;
- 
-     
+
  }
     
