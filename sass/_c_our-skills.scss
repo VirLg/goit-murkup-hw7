@@ -3,7 +3,11 @@
   
 }
 
-
+.employee-list__img-view {
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+}
 .skills__ul{
     list-style: none;
     padding: 0;
@@ -46,7 +50,7 @@
     margin-bottom: 10px;
 }
 .skills-position {
-    background-color: $primary-icon-color;
+    background-color: var(--primary-icon-color);
 }
 .skills__item {
 width: 70px;

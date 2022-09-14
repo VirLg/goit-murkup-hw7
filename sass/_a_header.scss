@@ -58,7 +58,7 @@ padding-bottom: 32px;
 
   &:hover,
   &focus {
-color: $accent-text-color;
+color: var(--accent-text-color);
 
   }
 }
