@@ -1,68 +1,5 @@
-%determtext {
 
-font-family: Raleway,
-sans-serif;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.19;
-letter-spacing: 0.03em;
-}
-
-
-%title-two {
-    margin: 0;
-
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-
-
-%title-three {
-
-    font-family: 'Roboto', sans-serif;
-
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-
-
-letter-spacing: 0.03em;
-
-color: #757575;
-}
-
-/*========Utilits=============  */
-%visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-
-
-
-h1,
-h2,
-h3,
-h4,
-p{ 
-    margin: 0;
-}
-
-img {
+%img {
     display: block;
     margin: 0 auto;
     cursor: pointer;
@@ -71,8 +8,7 @@ img {
 }
 
 %link {
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 
 %container {
@@ -90,23 +26,10 @@ img {
     margin: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-%main-text  {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $title-text-color;
-}
-
-
 %section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-
 %flex {
     display: flex;
     align-items: center;

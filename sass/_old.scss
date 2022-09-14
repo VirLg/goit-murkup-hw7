@@ -134,10 +134,6 @@ img {
     text-align: center;
 }
 
-.employee-network {
-    justify-content: center;
-    column-gap: 10px;
-}
 
 .test-card {
     padding-top: 30px;
@@ -146,10 +142,7 @@ img {
 
 
 
-.employee-network img:hover,
-.employee-network img:focus {
-    background-color: var(--accent-text-color);
-}
+
 
 .social-icon {
     width: 20px;

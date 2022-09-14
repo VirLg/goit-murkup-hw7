@@ -1,4 +1,4 @@
-//  ======================Mobile====================
+
 .container {
    @extend %container;
 
@@ -20,7 +20,7 @@
 
 }
 
-//  ======================Desktop====================
+
 
 .header {
    @extend %flex;
@@ -39,7 +39,7 @@
 }
 }
 .block__list {
-   display: flexbox;
+   display: flex;
    
    
 }
