@@ -1,14 +1,11 @@
-.hero-fon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    @extend %container;
-}
+
+
+
+
 
 .hero-fon {
-    
+    padding-left: 15px;
+    padding-right: 15px;
      margin-left: auto;
     margin-right: auto;
      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -19,7 +16,7 @@
      background-position: center;
 
 @media screen and (max-width: 479px) {
-       width: 100%;
+       width: 479px;
         padding-top: 118px;
         padding-bottom: 118px;
     }
@@ -37,10 +34,15 @@
        padding-bottom: 118px;
      }
     @media screen and (min-width: $desktop){  
-        width: 1600px;
+       width: 1200px;
         padding-top: 120px;
        padding-bottom: 120px;
         }
+ @media screen and (min-width: 1600px) {
+     width: 1600px;
+     padding-top: 120px;
+     padding-bottom: 120px;
+ }
 }
 
 

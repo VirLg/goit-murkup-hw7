@@ -20,14 +20,7 @@
     padding-right: 15px;
 }
 
-.container {
-    display: block;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 %list {
     list-style: none;
     padding: 0;
@@ -49,5 +42,8 @@
     display: flex;
     align-items: center;
 }
-
+.flex {
+    display: flex;
+    align-items: center;
+}
 
