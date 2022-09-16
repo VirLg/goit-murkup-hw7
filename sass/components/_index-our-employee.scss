@@ -43,6 +43,7 @@
     }
 
     @media screen and (min-width: 768px) {
+        width: 738px;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
         row-gap: 30px;
@@ -51,8 +52,24 @@
         height: 374px;    
     }
 }
-}
 
+@media screen and (min-width: 1200px) {
+    width: 1170px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    
+
+    .employee-list__thumb {
+        width: 270px;
+        height: 260px;
+    }
+
+
+
+
+
+}
+}
 
 
 .employee-list .employee-list__img-view {

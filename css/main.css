@@ -28,7 +28,6 @@ ol {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .index-container {
@@ -126,11 +125,23 @@ ol {
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
+  .index-skills__ul .index-skills__frame {
+    width: 354px;
+    height: 120px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .index-skills__ul {
     width: 1170px;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .index-skills__ul .index-skills__frame {
+    width: 270px;
+    height: 120px;
+  }
+  .index-skills__ul .index-skills__frame {
+    width: 270px;
+    height: 120px;
   }
 }
 .index-skills__ul__item {
@@ -194,6 +205,7 @@ ol {
 }
 @media screen and (min-width: 768px) {
   .employee-list {
+    width: 738px;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 30px;
          column-gap: 30px;
@@ -202,6 +214,18 @@ ol {
   .employee-list .employee-list__thumb {
     width: 354px;
     height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employee-list {
+    width: 1170px;
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .employee-list .employee-list__thumb {
+    width: 270px;
+    height: 260px;
   }
 }
 

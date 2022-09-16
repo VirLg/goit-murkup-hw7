@@ -23,13 +23,27 @@
     }
     @media screen and (min-width: 768px) {
         width: 738px;
+         .index-skills__frame {
+                        width: 354px;
+                        height: 120px;
+                    }
+                
+                
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
+       
     }
     @media screen and (min-width: 1200px) {
         width: 1170px;
+        .index-skills__frame {
+                width: 270px;
+                height: 120px;
+            }
         grid-template-columns: repeat(4, 1fr);
-        
+        .index-skills__frame {
+                width: 270px;
+                height: 120px;
+            }
     }
 
 &__item{
