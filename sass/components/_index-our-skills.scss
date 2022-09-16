@@ -20,7 +20,7 @@
         grid-template-columns: repeat(4, 1fr);
         
     }
-}
+
 &__item{
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
         @media screen and (min-width: 1200px) {
             width: 100% /4;           
         }     
-}
+
 &__frame {
     display: flex;
     justify-content: center;
@@ -52,4 +52,6 @@
      width: 270px;
      height: 120px;
     }
+}
+}
 }
