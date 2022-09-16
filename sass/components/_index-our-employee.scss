@@ -6,21 +6,56 @@
 
 
 
-.employee-list {
+// .employee-list {
 
     
 
-    @media screen and (max-width: $mobile) {
+//     @media screen and (max-width: $mobile) {
       
-    }
-    @media screen and (min-width: $mobile) {
+//     }
+//     @media screen and (min-width: $mobile) {
       
-    }
-    @media screen and (min-width: $tablet) {
-    }
+//     }
+//     @media screen and (min-width: $tablet) {
+//     }
 
 
+// }
+
+
+.employee-list {
+
+
+    display: grid;
+
+
+    @media screen and (max-width: 480px) {
+        max-width: 450px;
+
+
+        
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+
+
+    }
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+        .employee-list__thumb{
+        width: 354px;
+        height: 374px;    
+    }
+}
 }
 
 
 
+.employee-list .employee-list__img-view {
+    width: 100%;
+    height: 100%;
+}

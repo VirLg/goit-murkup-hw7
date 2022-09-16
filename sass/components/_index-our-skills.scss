@@ -2,13 +2,24 @@
     margin-left: auto;
     margin-right: auto;
 }
+.index-skills__frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-button);
+    border-radius: 4px;
+}
+
 
 .index-skills__ul {
     
     display: grid;
     @media screen and (min-width: 480px) {
             width: 450px;
-            
+        .index-skills__frame {
+            width: 450px;
+            height: 120px;
+        }
     }
     @media screen and (min-width: 768px) {
         width: 738px;
