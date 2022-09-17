@@ -1,34 +1,33 @@
+@import './utils/variebles';
+@import './utils/visually-hidden';
 
-@import './utils/var';
-
-
-
-@import './components/index-hero';
-@import './components/index-our-skills';
-@import './components/index-our-employee';
+@import './base/common';
+@import './base/section';
+@import './base/container';
 
 
+@import './components/header_logo';
+@import './components/header-navigation_autorizator';
+@import './components/title';
+@import './components/button';
+
+@import './components/footer-logo';
+@import './components/footer-form';
 
 
-// @import './base/base';
 
 
-// @import './utils/text-style';
-// @import './utils/visually-hidden';
-// @import './utils/media';
-// @import './utils/breakpoints';
-// 
-// @import './utils/placeholders';
-// @import './utils/dynamicvar';
+@import './layout/hero-box';
+@import './layout/our_work';
+@import './layout/our_employee';
+@import './layout/main-clients';
+@import './layout/skills';
 
-// @import './utils/logo';
-// @import './utils/mixins';
-// @import './aa_mobile_header';
-// @import './a_header';
-// @import './b_hero';
-// @import './c_our-skills';
-// @import './e_our_emloyee';
-// @import './f_main-clients';
 
-// @import './base/test';
-// @import './base/test_var';
+
+
+@import './layout/footer';
+
+@import './layout/portfolio';
+@import './layout/portfolio-card';
+@import './components/modal-window';

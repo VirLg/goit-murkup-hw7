@@ -1,0 +1,42 @@
+/* .border-logo {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+*/ .client-svg {
+    fill: currentColor;
+}
+.clients {
+    background-color: #f5f4fa;
+}
+
+.client-icon {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--primary-icon-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-icon-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    border-color: var(--accent-text-color);
+    color: var(--accent-text-color);
+}
+
+
+
+}
+
+.client-our {
+    column-gap: 30px;
+}
+
+

@@ -1,0 +1,37 @@
+.section.skills {
+    padding-bottom: 0;
+}
+
+.skills-item {
+    line-height: 1.71;
+}
+
+.ul-skills .title {
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+}
+
+.ul-skills {
+    column-gap: 30px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.skills-element {
+    width: 270px;
+}
+
+.icon-skills-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+
+    background-color: var(--background-button);
+    border-radius: 4px;
+}
+
+.icon-skills-svg {
+    column-gap: 30px;
+}

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Домашнє завдання</title>
 
     <link
@@ -15,119 +14,126 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/main.min.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header-->
-    <header class="container">
+    <header class="header flex">
       <!--================ Navigation===================== -->
 
-      <nav class="block flex">
-        <a class="logo link" href="./index.html"> <span class="logo__span">Web</span>Studio</a>
+      <div class="flex container">
+        <nav class="flex">
+          <a class="nav-logo" href="./index.html"> <span class="logo-span">Web</span>Studio</a>
 
-        <ul class="block__list nav flex">
-          <li>
-            <a href="./index.html" class="block__link current">Студия</a>
+          <ul class="list link ul-nav flex">
+            <li>
+              <a href="./index.html" class="nav current">Студия</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="nav">Потрфоліо</a>
+            </li>
+            <li>
+              <a href="./index-test.html" class="nav">Контакти</a>
+            </li>
+          </ul>
+
+          <!-- </nav> -->
+        </nav>
+        <!===================Autorizaciya====================== >
+        <ul class="nav-aut list flex">
+          <li class="mailto-post">
+            <a class="link flex link-nav-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+              <svg class="mailto-item">
+                <use href="./images/sprite.svg#icon-header-1"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a href="./portfolio.html" class="block__link">Потрфоліо</a>
-          </li>
-          <li>
-            <a href="./index-test.html" class="block__link">Контакти</a>
+
+          <li class="mailto-fone">
+            <a class="link link-nav-tel flex" href="tel:+380961111111"
+              >+38 096 111 11 11
+              <svg class="mailto-tel">
+                <use href="./images/sprite.svg#icon-header-2" height="16"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-      <!===================Autorizaciya====================== >
-      <ul class="block block__list autorizator">
-        <li class="block__item">
-          <a class="block__link flex-revers" href="mailto:info@devstudio.com"
-            >info@devstudio.com
-            <svg class="mailto-item">
-              <use href="./images/sprite.svg#icon-header-1"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="block__item">
-          <a class="block__link flex-revers" href="tel:+380961111111"
-            >+38 096 111 11 11
-            <svg class="mailto-tel">
-              <use href="./images/sprite.svg#icon-header-2"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
     <!--Main-->
     <main>
+      <!--pointer-->
+
       <!==================bg==============================>
 
-      <section class="section">
-        <div class="hero-fon hero-container">
-          <div class="index-hero-fon">
-            <h1 class="hero-block__title">
-              Ефективні рішення для <br />
-              вашого бізнесу
-            </h1>
+      <section class="heroy-box">
+        <div class="container">
+          <h1 class="main-title">
+            Ефективні рішення для <br />
+            вашого бізнесу
+          </h1>
 
-            <button data-modal-open type="button" class="button hero-block-button">
-              Замовити послугу
-            </button>
-          </div>
+          <button data-modal-open type="button " class="button main-button">
+            Замовити послугу
+          </button>
         </div>
       </section>
 
       <!================our skills======================>
-      <section class="section">
-        <div class="index-container">
-          <h2 class="title-two">Наші скіли</h2>
+      <section class="section skills">
+        <div class="container">
+          <h2 class="section-title skills visually-hidden">Наші скіли</h2>
 
-          <ul class="index-skills__ul">
-            <li class="index-skills__item">
-              <div class="index-skills__frame">
-                <svg width="70" height="70">
-                  <use href="./images/sprite.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="">Увага до деталей</h3>
+          <ul class="list flex icon-skills-svg">
+            <li class="icon-skills-item">
+              <svg width="70" height="70">
+                <use href="./images/sprite.svg#icon-antenna"></use>
+              </svg>
+            </li>
+            <li class="icon-skills-item">
+              <svg width="70" height="70">
+                <use href="./images/sprite.svg#icon-clock"></use>
+              </svg>
+            </li>
+            <li class="icon-skills-item">
+              <svg width="70" height="70">
+                <use href="./images/sprite.svg#icon-diagram"></use>
+              </svg>
+            </li>
+            <li class="icon-skills-item">
+              <svg width="70" height="70">
+                <use href="./images/sprite.svg#icon-astronaut"></use>
+              </svg>
+            </li>
+          </ul>
 
-              <p class="">
+          <ul class="list ul-skills flex">
+            <li class="skills-element">
+              <h3 class="title">Увага до деталей</h3>
+              <p class="skills-item">
                 Ідейні міркування, і навить початок повсякденної роботи з формування позиції.
               </p>
             </li>
 
-            <li class="index-skills__item">
-              <div class="index-skills__frame">
-                <svg width="70" height="70">
-                  <use href="./images/sprite.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="">Пунктуальність</h3>
-              <p class="">
+            <li class="skills-element">
+              <h3 class="title">Пунктуальність</h3>
+              <p class="skills-item">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
 
-            <li class="index-skills__item">
-              <div class="index-skills__frame">
-                <svg class="index-skills__svg" width="70" height="70">
-                  <use href="./images/sprite.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="title-three">Планування</h3>
-              <p class="block__pharagrap">
+            <li class="skills-element">
+              <h3 class="title">Планування</h3>
+              <p class="skills-item">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li class="index-skills__item">
-              <div class="index-skills__frame">
-                <svg class="index-skills__svg" width="70" height="70">
-                  <use href="./images/sprite.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="title-three">Сусасні технології</h3>
-              <p class="block__pharagrap">
+            <li class="skills-element">
+              <h3 class="title">Сусасні технології</h3>
+              <p class="skills-item">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -136,52 +142,59 @@
       </section>
       <!====================our work======================>
       <section class="section">
-        <div class="our-work">
-          <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list flex our-work">
-            <li class="item-our-work">
-              <img class="img-view" src="./images/scheme.jpg" alt="scheme" width="370" />
-              <div class="work__bg">
-                <p class="work__text">Десктопні додатки</p>
+        <div class="container block-our-work">
+          <h2 class="section-title block-our-work-title">Чим ми займаємося</h2>
+          <ul class="list flex our-work-list">
+            <li class="our-work__item">
+              <img
+                class="img-view our-work__img"
+                src="./images/scheme.jpg"
+                alt="scheme"
+                width="370"
+              />
+              <div class="our-work__overlay">
+                <p class="our-work__overlay-text">Десктопні додатки</p>
               </div>
             </li>
-            <li class="item-our-work">
-              <img class="img-view" src="./images/app.jpg" alt="app" width="370" />
-              <div class="work__bg">
-                <p class="work__text">Мобільні додатки</p>
+            <li class="our-work__item">
+              <img class="img-view our-work__img" src="./images/app.jpg" alt="app" width="370" />
+              <div class="our-work__overlay">
+                <p class="our-work__overlay-text">Мобільні додатки</p>
               </div>
             </li>
-            <li class="item-our-work">
-              <img class="img-view" src="./images/tablet.jpg" alt="tablet" width="370" />
-              <div class="work__bg">
-                <p class="work__text">Дизайнерскі рішення</p>
+            <li class="our-work__item">
+              <img
+                class="img-view our-work__img"
+                src="./images/tablet.jpg"
+                alt="tablet"
+                width="370"
+              />
+              <div class="our-work__overlay">
+                <p class="our-work__overlay-text">Дизайнерскі рішення</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
       <!=====================Our employee===================>
-      <section class="section">
-        <div class="index-container">
-          <h2 class="section-title">Наша команда</h2>
-
-          <ul class="employee-list flex">
-            <li class="employee-list__item">
-              <div>
-                <img
-                  class="employee-list__img-view"
-                  src="./images/one.jpg"
-                  alt="photo men"
-                  width=""
-                />
-              </div>
-              <div>
-                <h3 class="employee">Ігор Дем'яненко</h3>
-                <p class="employee-text">Product Desig ner</p>
-                <ul class="employee-network__ul">
-                  <li class="">
+      <section class="section clients">
+        <div class="container employee-block">
+          <h2 class="section-title employee-main-title">Наша команда</h2>
+          <ul class="list flex employee-list">
+            <li class="employee-item">
+              <img
+                class="employee-item__img-view"
+                src="./images/one.jpg"
+                alt="photo men"
+                width="270"
+              />
+              <div class="employee-item__card">
+                <h3 class="employee-item__title">Ігор Дем'яненко</h3>
+                <p class="employee-item__text">Product Desig ner</p>
+                <ul class="list flex employee__social">
+                  <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener"
@@ -191,9 +204,9 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="employee-network__list">
+                  <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://twitter.com/?lang=uk"
                       target="_blank"
                       rel="noopener"
@@ -202,9 +215,9 @@
                         <use href="./images/sprite.svg#icon-twitter" height="20"></use></svg
                     ></a>
                   </li>
-                  <li class="employee-network__list">
+                  <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener"
@@ -213,9 +226,9 @@
                         <use href="./images/sprite.svg#icon-facebook" height="20"></use></svg
                     ></a>
                   </li>
-                  <li class="employee-network__list">
+                  <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener"
@@ -228,22 +241,20 @@
               </div>
             </li>
 
-            <li class="employee-list__item">
-              <div>
-                <img
-                  class="employee-list__img-view"
-                  src="./images/two.jpg"
-                  alt="photo women"
-                  width=""
-                />
-              </div>
-              <div class="">
+            <li class="employee-item">
+              <img
+                class="employee-item__img-view"
+                src="./images/two.jpg"
+                alt="photo women"
+                width="270"
+              />
+              <div class="employee-item__card">
                 <h3 class="employee">Ольга Рєпіна</h3>
-                <p class="employee-text">Frontend Developer</p>
-                <ul class="employee-network">
+                <p class="employee-item__text">Frontend Developer</p>
+                <ul class="list flex employee__social">
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener"
@@ -255,7 +266,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://twitter.com/?lang=uk"
                       target="_blank"
                       rel="noopener"
@@ -266,7 +277,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener"
@@ -277,7 +288,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener"
@@ -290,15 +301,20 @@
               </div>
             </li>
 
-            <li class="employee-list__item">
-              <img class="img-view" src="./images/three.jpg" alt="photo men" width="270" />
-              <div class="">
+            <li class="employee-item">
+              <img
+                class="employee-item__img-view"
+                src="./images/three.jpg"
+                alt="photo men"
+                width="270"
+              />
+              <div class="employee-item__card">
                 <h3 class="employee">Микола Тарасов</h3>
-                <p class="employee-text">Marketing</p>
-                <ul class="employee-network">
+                <p class="employee-item__text">Marketing</p>
+                <ul class="list flex employee__social">
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener"
@@ -310,7 +326,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://twitter.com/?lang=uk"
                       target="_blank"
                       rel="noopener"
@@ -321,7 +337,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener"
@@ -332,7 +348,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener"
@@ -345,15 +361,20 @@
               </div>
             </li>
 
-            <li class="employee-list__item">
-              <img class="img-view" src="./images/four.jpg" alt="photo men" width="270" />
-              <div class="">
+            <li class="employee-item">
+              <img
+                class="employee-item__img-view"
+                src="./images/four.jpg"
+                alt="photo men"
+                width="270"
+              />
+              <div class="employee-item__card">
                 <h3 class="employee">Михайло Єрмаков</h3>
-                <p class="employee-text">UI Designer</p>
-                <ul class="employee-network">
+                <p class="employee-item__text">UI Designer</p>
+                <ul class="list flex employee__social">
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener"
@@ -365,7 +386,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://twitter.com/?lang=uk"
                       target="_blank"
                       rel="noopener"
@@ -376,7 +397,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener"
@@ -387,7 +408,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item"
+                      class="social-item employee-item__social"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener"
@@ -403,20 +424,20 @@
         </div>
       </section>
       <!-- ============Main Clients============== -->
-      <section class="">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
 
-          <ul class="main-clients">
-            <li class="main-clients__list">
-              <a class="main-clients__item" href="">
+          <ul class="list flex client-our">
+            <li>
+              <a class="client-icon" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="main-clients__list">
+            <li>
               <a class="client-icon" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo-1"></use>
@@ -424,7 +445,7 @@
               </a>
             </li>
 
-            <li class="main-clients__list">
+            <li>
               <a class="client-icon" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo-2"></use>
@@ -432,7 +453,7 @@
               </a>
             </li>
 
-            <li class="main-clients__list">
+            <li>
               <a class="client-icon" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo-3"></use>
@@ -440,7 +461,7 @@
               </a>
             </li>
 
-            <li class="main-clients__list">
+            <li>
               <a class="client-icon" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo-4"></use>
@@ -448,7 +469,7 @@
               </a>
             </li>
 
-            <li class="main-clients__list">
+            <li>
               <a class="client-icon" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo-5"></use>
@@ -487,10 +508,10 @@
         <div>
           <p class="comin-title">Приєднуйтесь</p>
 
-          <ul class="list flex employee-network">
+          <ul class="list flex employee__social">
             <li>
               <a
-                class="social-item"
+                class="social-item employee-item__social"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener"
@@ -502,7 +523,7 @@
             </li>
             <li>
               <a
-                class="social-item"
+                class="social-item employee-item__social"
                 href="https://twitter.com/?lang=uk"
                 target="_blank"
                 rel="noopener"
@@ -513,7 +534,7 @@
             </li>
             <li>
               <a
-                class="social-item"
+                class="social-item employee-item__social"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener"
@@ -524,7 +545,7 @@
             </li>
             <li>
               <a
-                class="social-item"
+                class="social-item employee-item__social"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener"
@@ -539,8 +560,8 @@
         <div class="footer-form">
           <p class="comin-title">Підпишись на розсилку</p>
           <form>
-            <input type="email" class="footer-form-item" placeholder="E-mail" />
-            <button submit class="link footer-form-link" type="button">Підписатися</button>
+            <input type="email" class="footer-form-item" placeholder="E-mail" required />
+            <button submit class="link footer-form-link" type="submit">Підписатися</button>
           </form>
         </div>
       </div>
@@ -555,7 +576,7 @@
         </button>
 
         <div class="modal-form">
-          <h2 class="modal-title">Залиште своЇ данні, ми вам передзвонимо</h2>
+          <p class="modal-title">Залиште своЇ данні, ми вам передзвонимо</p>
           <form class="js-speaker-form">
             <div class="form-lable modal-for-position">
               <input
@@ -564,6 +585,7 @@
                 name="user-name"
                 id="name"
                 placeholder=" "
+                required
               />
               <label class="form-lable-text" for="name">Ім'я</label>
               <svg class="modal-icon-svg">
@@ -578,6 +600,7 @@
                 id="tel"
                 placeholder=" "
                 autocomplete="tel"
+                required
               />
               <label class="form-lable-text" for="tel">Телефон</label>
               <svg class="modal-icon-svg">
@@ -628,37 +651,20 @@
     </div>
 
     <script src="./modal.js"></script>
-    <script>
+    <!-- <script>
       (() => {
-        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-          e.preventDefault();
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
 
-          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
 
-          e.currentTarget.reset();
-        });
+            e.currentTarget.reset();
+          });
       })();
-    </script>
-
-    <div class="container">
-      <ul class="test-employee">
-        <li class="employee-item">
-          <svg class="svp-poz">
-            <use href="./images/sprite.svg#icon-clock"></use>
-          </svg>
-
-          <h3 class="employee">Ольга Рєпіна</h3>
-          <p class="employee-text">Frontend Developer</p>
-        </li>
-        <li class="employee-item">
-          <h3 class="employee">Ольга Рєпіна</h3>
-          <p class="employee-text">Frontend Developer</p>
-        </li>
-        <li class="employee-item">
-          <h3 class="employee">Ольга Рєпіна</h3>
-          <p class="employee-text">Frontend Developer</p>
-        </li>
-      </ul>
-    </div>
+    </script> -->
   </body>
 </html>
