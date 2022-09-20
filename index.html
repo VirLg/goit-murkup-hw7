@@ -19,47 +19,58 @@
   </head>
   <body>
     <!--Header-->
-    <header class="header flex">
+    <header class="page-header">
       <!--================ Navigation===================== -->
+      <div class="index-container">
+        <div class="menu-container is-open" id="menu-container" data-menu>
+          <nav class="block">
+            <a class="logo link" href="./index.html"> <span class="logo__span">Web</span>Studio</a>
 
-      <div class="flex index-container">
-        <nav class="flex">
-          <a class="nav-logo" href="./index.html"> <span class="logo-span">Web</span>Studio</a>
+            <ul class="block__list nav flex">
+              <li>
+                <a href="./index.html" class="block__link current">Студия</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="block__link">Потрфоліо</a>
+              </li>
+              <li>
+                <a href="./index-test.html" class="block__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <!===================Autorizaciya====================== >
+          <ul class="block block__list autorizator">
+            <li class="block__item">
+              <a class="block__link flex-revers" href="mailto:info@devstudio.com"
+                >info@devstudio.com
+                <svg class="mailto-item">
+                  <use href="./images/sprite.svg#icon-header-1"></use>
+                </svg>
+              </a>
+            </li>
 
-          <ul class="list link ul-nav flex">
-            <li>
-              <a href="./index.html" class="nav current">Студия</a>
-            </li>
-            <li>
-              <a href="./portfolio.html" class="nav">Потрфоліо</a>
-            </li>
-            <li>
-              <a href="./index-test.html" class="nav">Контакти</a>
+            <li class="block__item">
+              <a class="block__link flex-revers" href="tel:+380961111111"
+                >+38 096 111 11 11
+                <svg class="mailto-tel">
+                  <use href="./images/sprite.svg#icon-header-2"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-
-          <!-- </nav> -->
-        </nav>
-        <!===================Autorizaciya====================== >
-        <ul class="nav-aut list flex">
-          <li class="mailto-post">
-            <a class="link flex link-nav-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com
-              <svg class="mailto-item">
-                <use href="./images/sprite.svg#icon-header-1"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="mailto-fone">
-            <a class="link link-nav-tel flex" href="tel:+380961111111"
-              >+38 096 111 11 11
-              <svg class="mailto-tel">
-                <use href="./images/sprite.svg#icon-header-2" height="16"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
+        <button
+          type="button"
+          class="mobile-menu is-open"
+          aria-controls="menu-container"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильгного меню">
+            <use class="icon-burger" href="./images/sprite.svg#icon-burger"></use>
+            <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--Main-->
@@ -82,58 +93,56 @@
       </section>
 
       <!================our skills======================>
-      <section class="section skills">
+      <section class="section">
         <div class="index-container">
-          <h2 class="section-title skills visually-hidden">Наші скіли</h2>
+          <h2 class="title-two">Наші скіли</h2>
 
-          <ul class="list flex icon-skills-svg">
-            <li class="icon-skills-item">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-antenna"></use>
-              </svg>
-            </li>
-            <li class="icon-skills-item">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-clock"></use>
-              </svg>
-            </li>
-            <li class="icon-skills-item">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-diagram"></use>
-              </svg>
-            </li>
-            <li class="icon-skills-item">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-astronaut"></use>
-              </svg>
-            </li>
-          </ul>
+          <ul class="index-skills__ul">
+            <li class="index-skills__item">
+              <div class="index-skills__frame">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="">Увага до деталей</h3>
 
-          <ul class="list ul-skills flex">
-            <li class="skills-element">
-              <h3 class="title">Увага до деталей</h3>
-              <p class="skills-item">
+              <p class="">
                 Ідейні міркування, і навить початок повсякденної роботи з формування позиції.
               </p>
             </li>
 
-            <li class="skills-element">
-              <h3 class="title">Пунктуальність</h3>
-              <p class="skills-item">
+            <li class="index-skills__item">
+              <div class="index-skills__frame">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="">Пунктуальність</h3>
+              <p class="">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
 
-            <li class="skills-element">
-              <h3 class="title">Планування</h3>
-              <p class="skills-item">
+            <li class="index-skills__item">
+              <div class="index-skills__frame">
+                <svg class="index-skills__svg" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="title-three">Планування</h3>
+              <p class="block__pharagrap">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li class="skills-element">
-              <h3 class="title">Сусасні технології</h3>
-              <p class="skills-item">
+            <li class="index-skills__item">
+              <div class="index-skills__frame">
+                <svg class="index-skills__svg" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="title-three">Сусасні технології</h3>
+              <p class="block__pharagrap">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
