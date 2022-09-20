@@ -22,7 +22,7 @@
     <header class="header flex">
       <!--================ Navigation===================== -->
 
-      <div class="flex container">
+      <div class="flex index-container">
         <nav class="flex">
           <a class="nav-logo" href="./index.html"> <span class="logo-span">Web</span>Studio</a>
 
@@ -68,8 +68,8 @@
 
       <!==================bg==============================>
 
-      <section class="heroy-box">
-        <div class="container">
+      <section class="">
+        <div class="hero-container heroy-box">
           <h1 class="main-title">
             Ефективні рішення для <br />
             вашого бізнесу
@@ -83,7 +83,7 @@
 
       <!================our skills======================>
       <section class="section skills">
-        <div class="container">
+        <div class="index-container">
           <h2 class="section-title skills visually-hidden">Наші скіли</h2>
 
           <ul class="list flex icon-skills-svg">
@@ -142,7 +142,7 @@
       </section>
       <!====================our work======================>
       <section class="section">
-        <div class="container block-our-work">
+        <div class="index-container block-our-work">
           <h2 class="section-title block-our-work-title">Чим ми займаємося</h2>
           <ul class="list flex our-work-list">
             <li class="our-work__item">
@@ -177,20 +177,23 @@
         </div>
       </section>
       <!=====================Our employee===================>
-      <section class="section clients">
-        <div class="container employee-block">
-          <h2 class="section-title employee-main-title">Наша команда</h2>
-          <ul class="list flex employee-list">
-            <li class="employee-item">
-              <img
-                class="employee-item__img-view"
-                src="./images/one.jpg"
-                alt="photo men"
-                width="270"
-              />
-              <div class="employee-item__card">
-                <h3 class="employee-item__title">Ігор Дем'яненко</h3>
-                <p class="employee-item__text">Product Desig ner</p>
+      <section class="section">
+        <div class="index-container">
+          <h2 class="section-title">Наша команда</h2>
+
+          <ul class="employee-list">
+            <li class="employee-list__item">
+              <div class="employee-list__thumb">
+                <img
+                  class="employee-list__img-view"
+                  src="./images/one.jpg"
+                  alt="photo men"
+                  width=""
+                />
+              </div>
+              <div>
+                <h3 class="employee">Ігор Дем'яненко</h3>
+                <p class="employee-text">Product Designer</p>
                 <ul class="list flex employee__social">
                   <li>
                     <a
@@ -241,14 +244,16 @@
               </div>
             </li>
 
-            <li class="employee-item">
-              <img
-                class="employee-item__img-view"
-                src="./images/two.jpg"
-                alt="photo women"
-                width="270"
-              />
-              <div class="employee-item__card">
+            <li class="employee-list__item">
+              <div class="employee-list__thumb">
+                <img
+                  class="employee-list__img-view"
+                  src="./images/two.jpg"
+                  alt="photo men"
+                  width=""
+                />
+              </div>
+              <div>
                 <h3 class="employee">Ольга Рєпіна</h3>
                 <p class="employee-item__text">Frontend Developer</p>
                 <ul class="list flex employee__social">
@@ -301,14 +306,16 @@
               </div>
             </li>
 
-            <li class="employee-item">
-              <img
-                class="employee-item__img-view"
-                src="./images/three.jpg"
-                alt="photo men"
-                width="270"
-              />
-              <div class="employee-item__card">
+            <li class="employee-list__item">
+              <div class="employee-list__thumb">
+                <img
+                  class="employee-list__img-view"
+                  src="./images/three.jpg"
+                  alt="photo men"
+                  width=""
+                />
+              </div>
+              <div>
                 <h3 class="employee">Микола Тарасов</h3>
                 <p class="employee-item__text">Marketing</p>
                 <ul class="list flex employee__social">
@@ -361,14 +368,16 @@
               </div>
             </li>
 
-            <li class="employee-item">
-              <img
-                class="employee-item__img-view"
-                src="./images/four.jpg"
-                alt="photo men"
-                width="270"
-              />
-              <div class="employee-item__card">
+            <li class="employee-list__item">
+              <div class="employee-list__thumb">
+                <img
+                  class="employee-list__img-view"
+                  src="./images/four.jpg"
+                  alt="photo men"
+                  width=""
+                />
+              </div>
+              <div>
                 <h3 class="employee">Михайло Єрмаков</h3>
                 <p class="employee-item__text">UI Designer</p>
                 <ul class="list flex employee__social">
@@ -425,52 +434,52 @@
       </section>
       <!-- ============Main Clients============== -->
       <section class="section">
-        <div class="container">
+        <div class="index-container">
           <h2 class="section-title">Постійні клієнти</h2>
 
-          <ul class="list flex client-our">
-            <li>
-              <a class="client-icon" href="">
+          <ul class="main-clients">
+            <li class="main-clients__list">
+              <a class="main-clients__item" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
 
-            <li>
-              <a class="client-icon" href="">
+            <li class="main-clients__list">
+              <a class="main-clients__item" href="">
                 <svg class="client-svg" width="106" height="60">
-                  <use href="./images/sprite.svg#icon-Logo-1"></use>
+                  <use href="./images/sprite.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
 
-            <li>
-              <a class="client-icon" href="">
+            <li class="main-clients__list">
+              <a class="main-clients__item" href="">
                 <svg class="client-svg" width="106" height="60">
-                  <use href="./images/sprite.svg#icon-Logo-2"></use>
+                  <use href="./images/sprite.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
 
-            <li>
-              <a class="client-icon" href="">
+            <li class="main-clients__list">
+              <a class="main-clients__item" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
 
-            <li>
-              <a class="client-icon" href="">
+            <li class="main-clients__list">
+              <a class="main-clients__item" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
 
-            <li>
-              <a class="client-icon" href="">
+            <li class="main-clients__list">
+              <a class="main-clients__item" href="">
                 <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo-5"></use>
                 </svg>
@@ -482,7 +491,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-flex container">
+      <div class="footer-flex index-container">
         <div class="footer-1">
           <a href="./index.html" class="footer-logo"> <span class="logo-span">Web</span>Studio</a>
           <address class="address">
